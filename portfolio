@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zakiya Khanam | Senior Product Specialist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #003366;
+      --accent: #0066cc;
+      --dark: #1e293b;
+      --muted: #475569;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --success: #059669;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background-color: var(--bg); color: var(--dark); line-height: 1.55; }
+    
+    header {
+      background: linear-gradient(135deg, #002244 0%, #003366 100%);
+      color: white;
+      padding: 48px 20px 36px;
+      text-align: center;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+    header h1 { font-size: 2.1rem; font-weight: 700; margin-bottom: 6px; }
+    header p.subtitle { font-size: 1.05rem; color: #cbd5e1; margin-bottom: 16px; }
+    
+    .badge-container { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+    .badge {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 5px 12px;
+      border-radius: 16px;
+      font-size: 0.8rem;
+    }
+    .header-links a {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      background: var(--accent);
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      margin: 0 4px;
+    }
+    .header-links a.secondary {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    main { padding: 32px 0 48px; }
+    section { margin-bottom: 32px; }
+    h2.section-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--primary);
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+
+    .case-title { font-size: 1.05rem; font-weight: 600; margin-bottom: 8px; }
+    .tag {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #0369a1;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    .case-detail { font-size: 0.88rem; color: var(--muted); margin-bottom: 6px; }
+    .case-detail strong { color: var(--dark); }
+    .metric-box {
+      background: #ecfdf5;
+      border-left: 3px solid var(--success);
+      padding: 8px 12px;
+      border-radius: 4px;
+      margin-top: 10px;
+      font-size: 0.84rem;
+      color: #065f46;
+      font-weight: 500;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    .skill-category {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .skill-category h3 { font-size: 0.9rem; font-weight: 600; color: var(--primary); margin-bottom: 6px; }
+    .skill-category ul { list-style: none; font-size: 0.84rem; color: var(--muted); }
+    .skill-category li { margin-bottom: 3px; padding-left: 12px; position: relative; }
+    .skill-category li::before { content: "•"; position: absolute; left: 0; color: var(--accent); }
+
+    .awards-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+    .award-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+      text-align: center;
+    }
+    .award-card .award-name { font-weight: 600; font-size: 0.9rem; margin-bottom: 2px; }
+    .award-card .award-issuer { font-size: 0.8rem; color: var(--muted); }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+      padding: 24px;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Zakiya Khanam</h1>
+      <p class="subtitle">Senior Product Specialist | Technical SaaS & API Solutions</p>
+      <div class="badge-container">
+        <span class="badge">Solving Complex Workflows</span>
+        <span class="badge">REST API & Log Diagnostics</span>
+        <span class="badge">Freshworks & ServiceNow</span>
+        <span class="badge">Top CSAT Scorer</span>
+      </div>
+      <div class="header-links">
+        <a href="https://linkedin.com/in/zakiyakhanam" target="_blank">LinkedIn Profile</a>
+        <a href="mailto:zaki.khanam341@gmail.com" class="secondary">Contact Email</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Overview -->
+    <section>
+      <h2 class="section-title">Professional Overview</h2>
+      <div class="card">
+        <p style="font-size: 0.92rem; color: var(--muted);">
+          Senior Product Specialist with 3+ years of experience resolving critical SaaS incidents, diagnosing <strong>REST APIs & webhooks</strong>, and <strong>solving complex enterprise workflows</strong> across Freshworks and ServiceNow. Proven track record in rapid root cause analysis (RCA), Tier-3 defect reproduction, and cross-functional engineering escalation.
+        </p>
+      </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section>
+      <h2 class="section-title">Selected Impact</h2>
+      <div class="grid-2">
+        <div class="card">
+          <span class="tag">Workflow Solutions</span>
+          <h3 class="case-title">Complex Workflow Architecture & Custom APIs</h3>
+          <p class="case-detail"><strong>Scope:</strong> Configured multi-tier department approvals, automated routing rules, and custom REST API webhook integrations.</p>
+          <p class="case-detail"><strong>Action:</strong> Validated endpoints via Postman, eliminated configuration bottlenecks, and drafted clear operational runbooks.</p>
+          <div class="metric-box">
+            ✓ 100% SLA adherence throughout deployment and zero rollout-related escalation tickets.
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="tag">Diagnostics & CSAT</span>
+          <h3 class="case-title">Incident Queue Triage & Backlog Reduction</h3>
+          <p class="case-detail"><strong>Scope:</strong> Tackled high ticket aging and access bottlenecks on Unilever live production systems (DWS project).</p>
+          <p class="case-detail"><strong>Action:</strong> Targeted authentication blockers (Azure AD / Zscaler) and streamlined hand-offs to Tier-3 engineering teams.</p>
+          <div class="metric-box">
+            ✓ Boosted resolution speed by 30% and earned recognition as Top CSAT Scorer.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Skills -->
+    <section>
+      <h2 class="section-title">Core Competencies</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>API & Diagnostics</h3>
+          <ul>
+            <li><strong>REST API</strong> Integration & Testing</li>
+            <li>Postman Payload Debugging</li>
+            <li>Haystack Log Querying</li>
+            <li>Root Cause Analysis (RCA)</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Platforms & Systems</h3>
+          <ul>
+            <li>Freshservice & Freshdesk</li>
+            <li>ServiceNow</li>
+            <li>Azure Active Directory</li>
+            <li>Zscaler & Citrix Access</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Workflow Engineering</h3>
+          <ul>
+            <li>Solving Complex Workflows</li>
+            <li>Approval Logic & Automation</li>
+            <li>Engineering Bug Hand-offs</li>
+            <li>SLA & CSAT Governance</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recognitions -->
+    <section>
+      <h2 class="section-title">Awards & Certifications</h2>
+      <div class="awards-list">
+        <div class="award-card">
+          <div class="award-name">Team A Award & Kudos</div>
+          <div class="award-issuer">Freshworks</div>
+        </div>
+        <div class="award-card">
+          <div class="award-name">Top CSAT Scorer</div>
+          <div class="award-issuer">Unisys (Unilever DWS Project)</div>
+        </div>
+        <div class="award-card">
+          <div class="award-name">AI in Product Management</div>
+          <div class="award-issuer">SWAYAM-NPTEL, IIT Roorkee</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Zakiya Khanam • Senior Product Specialist • Bengaluru, India</p>
+    </div>
+  </footer>
+
+</body>
+</html>
